@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Alumno } from './model/alumno.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'listado-alumnos';
+  titulo = 'listado de personas';
+
+  alumnos: Alumno[] = [
+    new Alumno('Juan', 'Perez'),
+    new Alumno('Laura', 'Suarez'),
+    new Alumno('Alejo', 'Zuluaga')
+  ];
+
+  alumnoAgregada(alumno: Alumno){
+    this.alumnos.push(alumno);
+  }
+
 }
