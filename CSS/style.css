@@ -1,0 +1,52 @@
+/* *{
+    background-color: burlywood;
+    color: cornflowerblue;
+}
+
+h1{
+    color: rgb(15, 7, 4);
+    text-align: center;
+    font-size: 100px;
+} */
+
+/* h1, h2, p{
+    color: darkgreen;
+    text-align: center;
+} */
+/* 
+*{
+    background-color: darkkhaki;
+}
+
+p.centrar{
+    text-align: center;
+} */
+h1{
+    text-align: center;
+}
+.azul{
+    border: 10px double rgba(0, 206, 209, 0.979);
+}
+.rosa{
+    border: 10px dashed blueviolet;
+}
+.verde{
+    border: 10px solid #ff6347;
+    border-radius: 20px 0px 10px 0px;
+}
+.amarillo{
+    border: 10px dotted hsl(33, 100%, 50%);
+    border-width: 10px 5px 3px 2px; /*thin, medium, thick*/
+}
+
+.surco{
+    border: 10px groove lawngreen;
+}
+.cresta{
+    border: 10px ridge lightseagreen;
+}
+.recuadro{
+    border: 10px inset maroon;
+}
+
+

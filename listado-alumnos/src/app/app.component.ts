@@ -1,22 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LoginService } from './service/loginService.service';
 import { Alumno } from './model/alumno.model';
+import { AlumnoService } from './service/alumnos.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   titulo = 'listado de personas';
 
-  alumnos: Alumno[] = [
-    new Alumno('Juan', 'Perez'),
-    new Alumno('Laura', 'Suarez'),
-    new Alumno('Alejo', 'Zuluaga')
-  ];
+  alumnos: Alumno[] = [];
 
-  alumnoAgregada(alumno: Alumno){
-    this.alumnos.push(alumno);
+  constructor(
+    private loginService: LoginService,
+    private alumnoService: AlumnoService
+  ) {}
+  ngOnInit(): void {
+    this.alumnos = this.alumnoService.alumnos;
   }
-
 }
