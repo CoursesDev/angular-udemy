@@ -3,8 +3,6 @@
     <h1>{{titulo}}</h1>
   </div>
   <hr>
-  <app-formulario></app-formulario>
-  <hr>
-  <app-alumno *ngFor="let alumnoElemento of alumnos; let i = index" [alumno]="alumnoElemento" [indice]="i">
-  </app-alumno>
 </div>
+<router-outlet></router-outlet>
+

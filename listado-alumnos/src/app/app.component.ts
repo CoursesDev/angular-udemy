@@ -8,16 +8,7 @@ import { AlumnoService } from './service/alumnos.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   titulo = 'listado de personas';
 
-  alumnos: Alumno[] = [];
-
-  constructor(
-    private loginService: LoginService,
-    private alumnoService: AlumnoService
-  ) {}
-  ngOnInit(): void {
-    this.alumnos = this.alumnoService.alumnos;
-  }
 }

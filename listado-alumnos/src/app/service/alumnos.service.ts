@@ -19,4 +19,19 @@ constructor(private loginService: LoginService){}
     this.loginService.enviarMensaje("Se agrega alumno")
     this.alumnos.push(alumno);
   }
+
+  encontrarAlumno(index:number){
+    let alumnos:Alumno = this.alumnos[index];
+    return alumnos
+  }
+
+  modificarPersona(index:number, alumno: Alumno){
+    let persona = this.alumnos[index];
+    persona.nombre = alumno.nombre;
+    persona.apellido = alumno.apellido;
+  }
+
+  eliminarAlumno(index:number){
+    this.alumnos.splice(index, 1);
+  }
 }
