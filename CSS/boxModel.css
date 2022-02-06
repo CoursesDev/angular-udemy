@@ -1,0 +1,14 @@
+h1{
+    color: mediumorchid;
+    text-align: center;
+}
+
+div{
+    padding: 10px;
+    border: 15px solid orangered;
+    margin: 20px;
+    background-color: blueviolet;
+    width: 300px;
+    outline: 10px solid orange;
+    outline-offset: 10px;
+}
